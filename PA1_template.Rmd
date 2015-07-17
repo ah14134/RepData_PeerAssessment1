@@ -91,9 +91,4 @@ stepsAvgWeekend <-aggregate(steps ~ interval + day_type, data=activity, FUN = me
 names(stepsAvgWeekend) <- c("interval", "day_type", "steps")
 
 qplot(interval, steps, data=stepsAvgWeekend,  facets = day_type~., geom="line")
-
-<<<<<<< HEAD
 ```
-=======
-```
->>>>>>> d16030a372e1149dec34b5e82a950cef89a9b799
